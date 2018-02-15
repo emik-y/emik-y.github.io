@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>События мыши</title>
+
+    <script>
+
+        window.addEventListener('load', function () {
+            var ps = document.querySelectorAll("p");
+
+            for (var i = 0; i < ps.length; i++) {
+                // курсор вошел в пределы элемента.
+                ps[i].addEventListener('mouseover', function () {
+                    this.style.backgroundColor = '#000';
+                });
+
+                // курсор вышел за пределы элемента.
+                ps[i].addEventListener('mouseout', function () {
+                    this.style.backgroundColor = '#fc0';
+                });
+            }
+
+        });
+
+    </script>
+
+</head>
+<body>
+    <div class="wrap">
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+    </div>
+
+
+
+
+
+    <style>
+    .wrap{
+        display: flex;
+    }
+    p {
+        background: red;
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+    }
+</style>
+</body>
+</html>
