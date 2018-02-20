@@ -1,0 +1,2 @@
+window.onload=function(){function e(){return document.querySelector(this.hash).classList.toggle("show"),"burger2"==this.id&&document.querySelector(".nav_menu_carousel .wrap").classList.toggle("show"),!1}burger1.onclick=e,burger2.onclick=e,$(".section_slider .slider").owlCarousel({items:1}),$(".widget .slider").owlCarousel({items:1,loop:!0}),$(".section_brand .slider").owlCarousel({items:5,loop:!0,nav:!0,navText:['<i class="fa fa-chevron-left" aria-hidden="true"></i>','<i class="fa fa-chevron-right" aria-hidden="true"></i>']})};
+//# sourceMappingURL=script.js.map
