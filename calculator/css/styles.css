@@ -1,5 +1,6 @@
 html, body{
     margin: 40px;
+    box-sizing: border-box;
 }
 .calc{
 	background: #ccc;
@@ -22,6 +23,8 @@ html, body{
 	height: 25px;
 	border-radius: 3px;
 	border: 1px solid #000;
+	padding: 5px;
+	box-sizing: border-box;
 }
 .calc .buttons{
 	display: flex;
@@ -38,4 +41,6 @@ html, body{
 	border-radius: 3px;
 	border: 1px solid #000;
 	background: #fff;
+	box-sizing: border-box;
+	padding-left: 5px;
 }

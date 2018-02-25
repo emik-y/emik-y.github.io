@@ -39,7 +39,7 @@ window.addEventListener('load', function(e) {
 
 	div.addEventListener('click', function(e) {
 		if(num2.value == '0' ){
-			res.innerHTML = 'На 0 делить нельзя';
+			res.innerHTML = "Can't divide by 0";
 			div.disabled = true;
 		}else{
 			res.innerHTML = parseInt(num1.value) / parseInt(num2.value);
@@ -58,7 +58,7 @@ window.addEventListener('load', function(e) {
 	num2.addEventListener('input', btnEnabled);
 	function btnEnabled(){
 		if(this.value.search(/\D/) >= 0 ){
-			res.innerHTML = 'Только число';
+			res.innerHTML = 'Only number';
 			sum.disabled = true;
 			min.disabled = true;
 			div.disabled = true;
