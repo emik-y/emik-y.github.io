@@ -2,10 +2,7 @@ window.addEventListener('load', function(e) {
 
 	let box = document.querySelector('.calc');
 	let res = document.querySelector('.answer');
-	let sum = document.querySelector('[name=sum]');
-	let min = document.querySelector('[name=min]');
-	let div = document.querySelector('[name=div]');
-	let mult = document.querySelector('[name=mult]');
+	let inputs = document.querySelectorAll('.buttons input');
 	let num1 = document.querySelector('[name=num1]');
 	let num2 = document.querySelector('[name=num2]');
 	box.addEventListener('mousedown', function(e) {
@@ -25,51 +22,44 @@ window.addEventListener('load', function(e) {
 		}
 	}
 
-	sum.addEventListener('click', function(e) {
-		res.innerHTML = parseInt(num1.value) + parseInt(num2.value);
-		sum.disabled = true;
-		console.log(res.innerHTML);
-	});
+	for(input of inputs) {
 
-	min.addEventListener('click', function(e) {
-		res.innerHTML = parseInt(num1.value) - parseInt(num2.value);
-		min.disabled = true;
-		console.log(res.innerHTML);
-	});
-
-	div.addEventListener('click', function(e) {
-		if(num2.value == '0' ){
-			res.innerHTML = "Can't divide by 0";
-			div.disabled = true;
-		}else{
-			res.innerHTML = parseInt(num1.value) / parseInt(num2.value);
-			div.disabled = true;
-		}
-		console.log(res.innerHTML);
-	});
-
-	mult.addEventListener('click', function(e) {
-		res.innerHTML = parseInt(num1.value) * parseInt(num2.value);
-		mult.disabled = true;
-		console.log(res.innerHTML);
-	});
+		input.addEventListener('click', function(e) {
+			switch(this.value){
+				case '+':
+				res.innerHTML = parseInt(num1.value) + parseInt(num2.value); break;
+				case '-':
+				res.innerHTML = parseInt(num1.value) - parseInt(num2.value); break;
+				case '*':
+				res.innerHTML = parseInt(num1.value) * parseInt(num2.value); break;
+				case '/':
+				if(num2.value == '0' ){
+					res.innerHTML = "Can't divide by 0";
+				}else{
+					res.innerHTML = parseInt(num1.value) / parseInt(num2.value);
+				}
+			}
+			for (input of inputs) {
+				input.disabled = false;
+			}
+			this.disabled = true;
+		});
+	}
 
 	num1.addEventListener('input', btnEnabled);
 	num2.addEventListener('input', btnEnabled);
 	function btnEnabled(){
-		if(this.value.search(/\D/) >= 0 ){
-			res.innerHTML = 'Only number';
-			sum.disabled = true;
-			min.disabled = true;
-			div.disabled = true;
-			mult.disabled = true;
+
+		if(this.value.search(/[0-9-]/) >= 0 ){
+			for (input of inputs){
+				input.disabled = false;
+				res.innerHTML = '';
+			}
 		}else{
-			res.innerHTML = '';
-			sum.disabled = false;
-			min.disabled = false;
-			div.disabled = false;
-			mult.disabled = false;
+			res.innerHTML = 'Only number';
+			for (input of inputs){
+				input.disabled = true;
+			}
 		}
 	}
-
 });
