@@ -13,6 +13,7 @@ ul {
 
 body {
 	background: url(../images/background.jpg);
+	background-size: cover;
 	font-family: 'RobotoCondensed-Bold';
 }
 
