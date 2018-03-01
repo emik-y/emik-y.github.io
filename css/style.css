@@ -90,3 +90,11 @@ p {
 	margin: 10px;
 	font-size: 30px;
 }
+@media(max-width: 768px){
+	.samples .wrap{
+		margin-top: 30px;
+	}
+	.samples .wrap .slider1{
+		margin-bottom: 30px;
+	}
+}
