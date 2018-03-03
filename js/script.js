@@ -19,7 +19,5 @@ window.addEventListener('load', function(e) {
 	});$('.slider2 .owl-carousel').owlCarousel({
 		items: 1,
 		loop: true,
-		// autoplayHoverPause: true,
-		// autoplay:true
 	});
 });
