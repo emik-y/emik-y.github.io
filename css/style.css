@@ -93,14 +93,14 @@ p {
 		margin-bottom: 40px;
 	}
 	.info .wrap .title{
-		font-size: 30px;
+		font-size: 36px;
 	}
 }
 @media(max-width: 540px){
 	.skills{
-		display: none;
+		/*display: none;*/
 	}
 	.info .wrap .title{
-		font-size: 16px;
+		font-size: 26px;
 	}
 }
