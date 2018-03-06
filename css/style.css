@@ -41,11 +41,6 @@ p {
 	right: 0;
 	top: 0;
 }
-.skills .title{
-	margin-bottom: 10px;
-	margin-right: 18px;
-	font-size: 26px;
-}
 .skills .images{
 	display: flex;
 	flex-direction: column;
@@ -97,9 +92,15 @@ p {
 	.samples .wrap .slider1{
 		margin-bottom: 40px;
 	}
+	.info .wrap .title{
+		font-size: 40px;
+	}
 }
 @media(max-width: 540px){
 	.skills{
 		display: none;
+	}
+	.info .wrap .title{
+		font-size: 36px;
 	}
 }
