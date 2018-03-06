@@ -86,46 +86,48 @@ p {
 	font-size: 30px;
 }
 @media(max-width: 768px){
+	.skills .images img{
+		margin: 7px 10px;
+		width: 8vh;
+	}
 	h2{
-		font-size: 26px;
+		font-size: 30px;
+	}
+	.info .wrap .title{
+		font-size: 42px;
 	}
 	.samples .wrap{
-		margin-top: 40px;
+		margin-top: 60px;
 	}
 	.samples .wrap .slider1{
 		margin-bottom: 40px;
 	}
-	.info .wrap .title{
-		font-size: 38px;
+	.samples .wrap .slider1 h2{
+		font-size: 30px;
+	}
+	.samples .wrap .slider2 h2{
+		font-size: 26px;
 	}
 }
 @media(max-width: 540px){
+	.skills{
+		display: none;
+	}
 	h2{
-		font-size: 19px;
-	}
-	.skills .images img{
-		margin: 7px 0;
-		width: 5vh;
-	}
-	.info{
-		margin-right: 60px;
-		margin-left: 10px;
-		margin-top: -10px;
+		font-size: 23px;
 	}
 	.info .wrap .title{
-		font-size: 26px;
+		font-size: 36px;
+		margin-bottom: 20px;
 	}
 	.samples .wrap{
 		margin-top: 40px;
-		margin-right: 55px;
-		margin-left: 5px;
 	}
 	.samples .wrap .slider1{
-		margin-bottom: 20px;
+		margin-bottom: 45px;
 	}
 	.samples .wrap .slider1 h2{
-		font-size: 26px;
-		margin-bottom: 0;
+		font-size: 30px;
 	}
 	.samples .wrap .slider2 h2{
 		font-size: 26px;
