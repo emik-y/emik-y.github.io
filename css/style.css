@@ -88,6 +88,7 @@ p {
 @media(max-width: 768px){
 	.skills .images img{
 		/*margin: 7px 10px;*/
+		margin: 15px 10px;
 		width: 12vh;
 	}
 	h2{
