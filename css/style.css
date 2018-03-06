@@ -93,7 +93,7 @@ p {
 		margin-bottom: 40px;
 	}
 	.info .wrap .title{
-		font-size: 40px;
+		font-size: 30px;
 	}
 }
 @media(max-width: 540px){
@@ -101,6 +101,6 @@ p {
 		display: none;
 	}
 	.info .wrap .title{
-		font-size: 36px;
+		font-size: 16px;
 	}
 }
