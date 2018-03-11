@@ -1,0 +1,14 @@
+html, body{
+    margin: 0;
+    background: #eee;
+}
+
+p{
+	margin: 10px;
+	font-size: 30px;
+	display: inline-block;
+}
+.t1{
+    font-size: 30px;
+    display: inline-block;
+}
