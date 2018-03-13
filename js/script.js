@@ -18,6 +18,6 @@ window.addEventListener('load', function(e) {
 		}
 	});$('.slider2 .owl-carousel').owlCarousel({
 		items: 2,
-		// loop: true,
+		loop: true,
 	});
 });
