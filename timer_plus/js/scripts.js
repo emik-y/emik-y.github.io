@@ -43,24 +43,20 @@ class TimerFormatted extends Timer
 
 class TimerWords extends TimerFormatted
 {
-	getEnding(num, var1, var2, var3){
-		let i = num % 10;
-		if (i >= 2 && i <= 4){
-			return var2;
-		}else if(i >= 5 && i <= 20){
-			return var1;
-		}else if (i == 0){
+	getEnding(num, var1, var2){
+		let i = num;
+		if (i == 1){
 			return var1;
 		}else{
-			return var3;
+			return var2;
 		}
 	}
 	render(){
 		let data = this.splitTime();
 		let string;
-		string = data.h + ' ' + this.getEnding(data.h, 'часов', 'часа', 'час');
-		string += ', ' + data.m + ' ' + this.getEnding(data.m, 'минут', 'минуты', 'минута');
-		string += ', ' + data.s + ' ' + this.getEnding(data.s, 'секунд', 'секунды', 'секунда') + '.';
+		string = data.h + ' ' + this.getEnding(data.h, 'hour', 'hours');
+		string += ', ' + data.m + ' ' + this.getEnding(data.m, 'minute', 'minutes');
+		string += ', ' + data.s + ' ' + this.getEnding(data.s, 'second', 'seconds') + '.';
 		this.el.innerHTML = string;
 	}
 }

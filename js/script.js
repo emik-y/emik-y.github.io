@@ -1,7 +1,7 @@
 window.addEventListener('load', function(e) {
 	$('.slider1 .owl-carousel').owlCarousel({
 		items: 3,
-		loop: true,
+		// loop: true,
 		autoplayHoverPause: true,
 		autoplay:true,
 		responsiveClass:true,
@@ -17,7 +17,7 @@ window.addEventListener('load', function(e) {
 			}
 		}
 	});$('.slider2 .owl-carousel').owlCarousel({
-		items: 1,
-		loop: true,
+		items: 2,
+		// loop: true,
 	});
 });
