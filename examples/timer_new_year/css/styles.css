@@ -1,15 +1,16 @@
 html, body{
     margin: 0;
     background: #eee;
-    text-align: center;
+	text-align: center;
 }
 
-p{
-	margin: 10px;
-	font-size: 30px;
+h2{
 	display: inline-block;
+	font-size: 30px;
+	font-weight: 100;
+	margin: 10px;
 }
 .t1{
+	display: inline-block;
     font-size: 30px;
-    display: inline-block;
 }
