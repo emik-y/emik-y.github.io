@@ -2,8 +2,8 @@ window.addEventListener('load', function(e) {
 	$('.slider1 .owl-carousel').owlCarousel({
 		items: 3,
 		loop: true,
-		autoplay:true,
 		autoplayHoverPause: true,
+		autoplay:true,
 		responsiveClass:true,
 		responsive:{
 			0:{
@@ -19,8 +19,8 @@ window.addEventListener('load', function(e) {
 	});$('.slider2 .owl-carousel').owlCarousel({
 		items: 2,
 		loop: true,
-		autoplay:true,
 		autoplayHoverPause: true,
+		autoplay:true,
 		responsiveClass:true,
 		responsive:{
 			0:{
