@@ -1,0 +1,134 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	color: #5f5d67;
+}
+ul{
+	list-style: none;
+}
+.wrapper{
+	max-width: 755px;
+	margin: auto;
+}
+header{
+	box-sizing: border-box;
+	text-align: center;
+}
+header ul{
+	display: flex;
+	border-top: 1px solid #f3f3f3;
+	border-right: 1px solid #f3f3f3;
+	border-bottom: 3px solid #9dc5f0;
+}
+header ul li{
+	flex: 1 1 auto;
+	border-left: 1px solid #f3f3f3;
+}
+header ul li a{
+	display: block;
+	padding: 8px 0;
+	font-size: 14px;
+	text-transform: capitalize;
+}
+section .row{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+}
+section .content p{
+	font-family: "Times New Roman";
+	font-size: 24px;
+}
+section .content{
+	width: 63.5%;
+	background-color: #ffffff;
+	color: #555555;
+	padding: 20px;
+	box-sizing: border-box;
+	font-family: Arial;
+	font-size: 12px;
+	margin-right: 10px;
+}
+section aside{
+	width: 35%;
+	background-color: #ffffff;
+	color: #333333;
+	padding: 25px;
+	box-sizing: border-box;
+	font-family: "Trebuchet MS";
+	font-size: 14px;
+}
+section aside p{
+	font-family: Georgia;
+	font-size: 24px;
+}
+section .slider{
+	margin: 20px 0;
+}
+.btn, #menu{
+	display: none;
+}
+
+@media(max-width: 1200px){
+	section .content,
+	section aside {
+		margin: 10px;
+		flex-grow: 1;
+	}
+	header nav{
+		height: 400px;
+		position: absolute;
+		width: 100%;
+		overflow: hidden;
+	}
+	header ul{
+		flex-direction: column;
+		text-align: left;
+		position: absolute;
+		width: 35%;
+		background: white;
+		left: 0;
+		right: 0;
+		margin-left: 15px;
+		top: -300px;
+		z-index: -1;
+		transition: 1s;
+	}
+	header ul li a{
+		padding-left: 15px;
+		border-bottom: 1px solid #ccc;
+	}
+	#menu:checked + nav ul{
+		top: 20px;
+		z-index: 5;
+	}
+	.btn{
+		display: flex;
+		border: 1px solid #000;
+		border-radius: 5px;
+		padding: 5px 0;
+		width: 70px;
+		justify-content: center;
+		cursor: pointer;
+		margin-left: 15px;
+		-moz-user-select: none;
+	}
+}
+
+footer{
+	padding: 10px 0 40px 0;
+	color: #c2c1c4;
+	box-sizing: border-box;
+	margin: 85px 0 0 0;
+	font-size: 12px;
+}
+body{
+	background: linear-gradient(white, #eee);
+}
+img{
+	max-width: 100%;
+}
