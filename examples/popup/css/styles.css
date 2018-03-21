@@ -1,0 +1,51 @@
+.popupBlur{
+	filter: blur(3px);
+}
+.wrap{
+	transition: filter .2s;
+}
+.overlay{
+	background-color: rgba(0, 0, 0, 0.2);
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 10;
+	cursor: pointer;
+}
+
+.popup{
+	background: #fff;
+	max-width: 600px;
+	position: absolute;
+	right: 0;
+	left: 0;
+	margin: 0 auto;
+	top: 150px;
+	width:70%;
+	padding: 5px 20px 13px 20px;
+	border: 5px solid #ddd;
+	box-shadow: 0px 0px 20px #000;
+	border-radius: 10px;
+	z-index: 20;
+	display: none;
+}
+.buttons{
+	position: absolute;
+	right: 480px;
+	margin: 0 auto;
+	top: 154px;
+	z-index: 20;
+	display: none;
+}
+#button{
+	border: none;
+	background: none;
+	cursor: pointer;
+}
+
+.active{
+	display: block;
+}
