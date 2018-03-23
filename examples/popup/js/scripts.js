@@ -2,34 +2,36 @@ class Popup
 {
 	constructor(e){
 		this.popup = $(e.popup);
+		this.popup_parent = $(e.popup).parent();
+		this.button = $(e.popup).parent().find('.button');
 		this.overlay = $(e.overlay);
 		this.showPopup = $(e.showPopup);
-		this.buttons = $(e.buttons);
 		this.blur = $(e.blur) || false;
 		this.text = e.inner;
 		let th = this;
-		console.log(this.buttons);
-		// console.log(e.inner);
 		this.showPopup.on('click', function(e){
 			e.preventDefault();
 			th.open(th.text);
 		});
-		this.overlay.on('click', function(e){
-			th.close(th.text);
-		});
-		this.buttons.on('click', function(e){
-			th.close(th.text);
-		});
+		this.overlay.on('click', x);
+		this.button.on('click', x);
+		function x(){
+			th.close();
+		}
 	}
 	open(text){
+		if (this.blur) {
+			this.blur.addClass('popupBlur');
+		}
 		this.popup.addClass('active').html(text);
 		this.overlay.addClass('active');
-		this.buttons.addClass('active');
-		// дз - по клику на оверлей(создать метод close, которое будет закрывать по клику на оверлей; remove class 'active') чтобы закрывалось. добавить крестик чтобы закрывалось
+		this.popup_parent.addClass('active');
 	}
 	close(text){
-		this.popup.removeClass('active').html(text);
 		this.overlay.removeClass('active');
-		this.buttons.removeClass('active');
+		this.popup_parent.removeClass('active');
+		if (this.blur) {
+			this.blur.removeClass('popupBlur');
+		}
 	}
 }
