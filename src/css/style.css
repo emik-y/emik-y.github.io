@@ -28,6 +28,15 @@ h2{
 	font-size: 26px;
 	color: #fff;
 }
+.cv{
+	margin-top: 10px;
+	font-size: 34px;
+}
+.cv a{
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+}
 p {
 	font-size: 20px;
 	color: #fff;
