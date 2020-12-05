@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" media="all" href="images/favicon.ico">
+    <title>레노버 - 노트북, 데스크톱, 데이터 센터 및 액세서리</title>
+</head>
+<body>
+    <section>
+        <div class="circle circle-color"></div>
+        <header>
+            <a href="#"><img src="images/lenovo-logo-pcs.png" class="logo" alt=""></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2><b>레노버 아이디어패드</b><br><span class="span"> 게이밍 3</span></h2><br>
+                <p>상위 랭킹에 오를 수 있는 기능을 제공하는 노트북으로 온라인 게임의 경험을 높이고 초보들을 제쳐보세요. 아이디어패드 게이밍 3 (15)은 AMD Ryzen™ 프로세서, GeForce®그래픽, DDR4 메모리, 그리고 SSD 저장 옵션과 함께 경쟁적인 게임을 시작하는 관문을 제공합니다. 전원을 켜거나 껄 수 있는 최대 120Hz FHD 디스플레이는 카멜레온 블루(Chameleon Blue) 색상이나 오닉스 블랙(Onyx Black)으로 각도에 따라 빛을 굴절시키는 무지갯빛 색감을 뽐냅니다.</p><br>
+                <div class="price">
+                    <h3>시작 가격: <b>₩822,613</b></h3><a href="order-finish.html" class="linkbtn"><b>구매하기</b></a>
+                </div>
+            </div>
+            <div class="imgBox">
+                <img src="images/laptop-1.png" class="lenovo" alt="">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="images/laptop-1.png" onclick="imgSlider('images/laptop-1.png');changeCircleColor('#017143')"></li>
+            <li><img src="images/laptop-2.png" onclick="imgSlider('images/laptop-2.png');changeCircleColor('#ff55bf')"></li>
+            <li><img src="images/laptop-3.png" onclick="imgSlider('images/laptop-3.png');changeCircleColor('#1979FF')"></li>
+            <li><img src="images/laptop-4.png" onclick="imgSlider('images/laptop-4.png');changeCircleColor('#B719FF')"></li>
+            <li><img src="images/laptop-5.png" onclick="imgSlider('images/laptop-5.png');changeCircleColor('#5000D4')"></li>
+            <li><img src="images/laptop-6.png" onclick="imgSlider('images/laptop-6.png');changeCircleColor('#FF5733')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href=""><img src="images/twitter.png" alt=""></a></li>
+            <li><a href=""><img src="images/facebook.png" alt=""></a></li>
+            <li><a href=""><img src="images/instagram.png" alt=""></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.lenovo').src = anything;
+        }
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle-color');
+            circle.style.background = color;    
+            const span = document.querySelector('.span');
+            span.style.color = color;  
+            const linkbtn = document.querySelector('.linkbtn');
+            linkbtn.style.background = color; 
+        }
+    </script>
+</body>
+</html>
