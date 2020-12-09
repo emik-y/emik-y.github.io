@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #ffffff;
+    height: 80vh;
+}
+.wrap{
+    display: flex;
+}
+.left{
+    width: 97%;
+    padding-left: 10px;
+}
+.right{
+    width: 3%;
+    background-color: #ff6700;
+}
+header{
+    padding: 20px 0;
+    height: 17vh;
+    display: flex;
+}
+header .logo{
+    margin-left: 10px;
+}
+header ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: #ff6700;
+    margin: 0 25px;
+    height: 70px;
+    border-radius: 3px;
+}
+li{
+    list-style: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+header ul li a{
+    color: #fff;
+}
+header .logo img{
+    width: 70px;
+}
+section{
+    display: flex;
+    justify-content: space-around;
+    height: 83vh;
+}
+.slider{
+   min-width: 47%; 
+}
+.slide{
+    height: 480px;
+    text-align: center; 
+}
+.slide img{
+    height: 95%;
+}
+.description{
+    overflow: hidden;
+}
+.description .info{
+    width: 80%;
+    font-size: 22px;
+}
+.description i{
+    margin: 5px 10px 10px 0;
+}
+.description p a{
+    color: #ff6700;
+    font-weight: bold;
+}
+.price{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+.price span{
+    color: #ff6700;
+    font-size: 26px;
+    font-weight: bold;
+}
+.price p{
+    font-size: 36px;
+    padding: 0 20px;
+}
+.price s{
+    font-size: 14px;
+    color: #c6c6c6
+}
+a{
+    text-decoration: none;
+}
+p a:visited {
+
+}
+.buy-button{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px;
+    background: #ff6700;
+    color: #fff;
+    border-radius: 7px;
+    font-weight: 900;
+    letter-spacing: 1;
+    text-decoration: none;
+    text-align: center;
+    width: 150px;
+    align-self: center;
+}
+.bottom{
+    padding-top: 60px;
+    text-align: center;
+}
+.bottom img{
+    width: 80%;
+}
+.top{
+    border: 3px solid #ff6700;
+    padding: 25px;
+    border-radius: 5px;
+    margin: 5px 25px;
+}
+.controls{
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+.control{
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+.control img{
+    width: 100px;
+}
+.aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    padding: 100px 0;
+}
+.aside i{
+    color: #fff;
+    font-size: 28px;
+}
